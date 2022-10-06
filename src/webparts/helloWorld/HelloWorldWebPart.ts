@@ -3,7 +3,8 @@ import * as ReactDom from 'react-dom';
 import { Version } from '@microsoft/sp-core-library';
 import {
   IPropertyPaneConfiguration,
-  PropertyPaneTextField
+  PropertyPaneTextField,
+  PropertyPaneToggle
 } from '@microsoft/sp-property-pane';
 import { BaseClientSideWebPart } from '@microsoft/sp-webpart-base';
 import { IReadonlyTheme } from '@microsoft/sp-component-base';
@@ -11,6 +12,7 @@ import { IReadonlyTheme } from '@microsoft/sp-component-base';
 import * as strings from 'HelloWorldWebPartStrings';
 import HelloWorld from './components/HelloWorld';
 import { IHelloWorldProps } from './components/IHelloWorldProps';
+import { TooltipHost } from 'office-ui-fabric-react/lib/Tooltip';
 
 export interface IHelloWorldWebPartProps {
   description: string;
@@ -89,6 +91,13 @@ export default class HelloWorldWebPart extends BaseClientSideWebPart<IHelloWorld
               groupFields: [
                 PropertyPaneTextField('description', {
                   label: strings.DescriptionFieldLabel
+                }),
+                PropertyPaneToggle('description', {
+                  label: 
+                    React.createElement('div', {},
+                      React.createElement('span', {}, 'React element with `TooltipHost`'),
+                      React.createElement(TooltipHost, {}, 'Tooltip content')
+                    )
                 })
               ]
             }
