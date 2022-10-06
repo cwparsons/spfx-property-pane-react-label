@@ -1,0 +1,16 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "version": "1.15.2",
+    "libraryName": "spfx-property-pane-react-label",
+    "libraryId": "cb441924-6305-4d16-997c-15e6464e2d2b",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "spfx-property-pane-react-label",
+    "solutionShortDescription": "spfx-property-pane-react-label description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}

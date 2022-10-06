@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "spfx-property-pane-react-label-client-side-solution",
+    "id": "cb441924-6305-4d16-997c-15e6464e2d2b",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.15.2"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "spfx-property-pane-react-label description"
+      },
+      "longDescription": {
+        "default": "spfx-property-pane-react-label description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "spfx-property-pane-react-label Feature",
+        "description": "The feature that activates elements of the spfx-property-pane-react-label solution.",
+        "id": "eaef30b3-0ff1-43dd-bdf9-2adcc8aa0a68",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/spfx-property-pane-react-label.sppkg"
+  }
+}
